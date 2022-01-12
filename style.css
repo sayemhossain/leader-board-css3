@@ -138,10 +138,25 @@ hr {
   .container {
     width: 100%;
   }
-  .players,
-  .blogs,
-  .courses {
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
     grid-template-columns: repeat(1, 1fr);
+    padding-left: 3rem;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .course {
+    margin-bottom: 2rem;
   }
   .player,
   .blog {
@@ -152,6 +167,7 @@ hr {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+    margin-left: 4rem;
   }
   .players,
   .courses {
